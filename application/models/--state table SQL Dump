@@ -1,0 +1,93 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.5
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Dec 03, 2019 at 11:42 AM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Database: `usermanagement`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `list_states`
+--
+
+CREATE TABLE `list_states` (
+  `state_id` int(50) NOT NULL,
+  `country_id` int(230) DEFAULT NULL,
+  `state_name` varchar(200) DEFAULT NULL,
+  `changedate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `status` tinyint(4) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `list_states`
+--
+
+INSERT INTO `list_states` (`state_id`, `country_id`, `state_name`, `changedate`, `status`) VALUES
+(1, NULL, 'ANDHRA PRADESH', '2019-11-08 03:08:52.817591', 0),
+(2, NULL, 'ASSAM', '2017-04-12 05:22:38.000000', 0),
+(3, NULL, 'ARUNACHAL PRADESH', '2017-04-12 05:22:38.000000', 0),
+(4, NULL, 'GUJRAT', '2017-04-12 05:22:38.000000', 0),
+(5, NULL, 'BIHAR', '2017-04-12 05:22:38.000000', 0),
+(6, NULL, 'HARYANA', '2017-04-12 05:22:38.000000', 0),
+(7, NULL, 'HIMACHAL PRADESH', '2017-04-12 05:22:38.000000', 0),
+(8, NULL, 'JAMMU & KASHMIR', '2017-04-12 05:22:38.000000', 0),
+(9, NULL, 'KARNATAKA', '2017-04-12 05:22:38.000000', 0),
+(10, NULL, 'KERALA', '2017-04-12 05:22:38.000000', 0),
+(11, NULL, 'MADHYA PRADESH', '2017-04-12 05:22:38.000000', 0),
+(12, NULL, 'MAHARASHTRA', '2017-04-12 05:22:38.000000', 0),
+(13, NULL, 'MANIPUR', '2017-04-12 05:22:38.000000', 0),
+(14, NULL, 'MEGHALAYA', '2017-04-12 05:22:38.000000', 0),
+(15, NULL, 'MIZORAM', '2017-04-12 05:22:38.000000', 0),
+(16, NULL, 'NAGALAND', '2017-04-12 05:22:39.000000', 0),
+(17, NULL, 'ORISSA', '2017-04-12 05:22:39.000000', 0),
+(18, NULL, 'PUNJAB', '2017-04-12 05:22:39.000000', 0),
+(19, NULL, 'RAJASTHAN', '2017-04-12 05:22:39.000000', 0),
+(20, NULL, 'SIKKIM', '2017-04-12 05:22:39.000000', 0),
+(21, NULL, 'TAMIL NADU', '2017-04-12 05:22:39.000000', 0),
+(22, NULL, 'TRIPURA', '2017-04-12 05:22:39.000000', 0),
+(23, NULL, 'UTTAR PRADESH', '2017-04-12 05:22:39.000000', 0),
+(24, NULL, 'WEST BENGAL', '2017-04-12 05:22:39.000000', 0),
+(25, NULL, 'DELHI', '2017-04-12 05:22:39.000000', 0),
+(26, NULL, 'GOA', '2017-04-12 05:22:39.000000', 0),
+(27, NULL, 'PONDICHERY', '2017-04-12 05:22:39.000000', 0),
+(28, NULL, 'LAKSHDWEEP', '2017-04-12 05:22:39.000000', 0),
+(29, NULL, 'DAMAN & DIU', '2017-04-12 05:22:39.000000', 0),
+(30, NULL, 'DADRA & NAGAR', '2017-04-12 05:22:39.000000', 0),
+(31, NULL, 'CHANDIGARH', '2017-04-12 05:22:39.000000', 0),
+(32, NULL, 'ANDAMAN & NICOBAR', '2017-04-12 05:22:39.000000', 0),
+(33, NULL, 'UTTARANCHAL', '2017-04-12 05:22:39.000000', 0),
+(34, NULL, 'JHARKHAND', '2017-04-12 05:22:39.000000', 0),
+(35, NULL, 'CHATTISGARH', '2017-04-12 05:22:39.000000', 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `list_states`
+--
+ALTER TABLE `list_states`
+  ADD PRIMARY KEY (`state_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `list_states`
+--
+ALTER TABLE `list_states`
+  MODIFY `state_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+COMMIT;
